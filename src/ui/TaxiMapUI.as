@@ -226,11 +226,12 @@ package ui
 			for each (var hint:Object in hintsList)
 			{
 				// Category
+				// 9 : Zaap
 				// 8 : 
 				// 7 : Houses
 				// 6 : Donjons
 				// 5 : Prisms
-				// 4 : Diver (place marchande, banque, enclos, taverne, zaap...)
+				// 4 : Diver (place marchande, banque, enclos, taverne...)
 				// 3 : Ateliers
 				// 2 : HDV
 				// 1 : Temples
@@ -270,7 +271,7 @@ package ui
 				// 438, Foreuse
 				// 439, Canon pour l'île de Moon
 				// 900, Passage vers le berceau d'Alma
-				if (hint.worldMapId == worldMap.id && hint.category == 4 && hint.gfx == 410)
+				if (hint.worldMapId == worldMap.id && hint.category == 9 && hint.gfx == 410)
 				{
 					if (hint.x == _characterPositionIcon.x && hint.y == _characterPositionIcon.y)
 					{
