@@ -45,7 +45,7 @@ def updateModFile():
 		data = data.replace("${version}", version + "." + revision)
 		data = data.replace("${tag}", "v" + dofusVersion + "_" + version)
 		data = data.replace("${date}", datetime.date.today().isoformat())
-		data = data.replace("${filename}", moduleName + "_" + dofusVersion + "_" + version + "." + revision)
+		data = data.replace("${filename}", moduleName + "_" + dofusVersion + "_" + version)
 		with open(op.normpath(op.join(srcPath, "mod.json")), "w") as outFile:
 			outFile.write(data)
 
