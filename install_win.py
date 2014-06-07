@@ -42,7 +42,7 @@ def updateModFile():
 		data = data.replace("${name}", moduleName)
 		data = data.replace("${author}", authorName)
 		data = data.replace("${dofusVersion}", dofusVersion)
-		data = data.replace("${version}", version + "." + revision)
+		data = data.replace("${version}", version)
 		data = data.replace("${tag}", "v" + dofusVersion + "_" + version)
 		data = data.replace("${date}", datetime.date.today().isoformat())
 		data = data.replace("${filename}", moduleName + "_" + dofusVersion + "_" + version)
